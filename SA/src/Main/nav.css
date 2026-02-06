@@ -1,0 +1,36 @@
+.navbar {
+  background: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav-item{
+    margin-top: 30px;
+}
+.navbar .nav-link {
+  color: white !important;
+}
+.navbar-brand img{
+    width: 100%;
+    height: 10vh;
+}
+.Side img{
+    height: 10vh;
+}
+.navbar-nav{
+    gap: 25px;
+}
+.nav-btn{
+    padding: 10px 25px 10px 25px;
+    background-color: #FA8507;
+    color: white;
+    border-radius: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.Side img{
+    margin-right: 80px;
+}

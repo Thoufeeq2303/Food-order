@@ -1,0 +1,149 @@
+#Branches{
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+}
+.title{
+    text-align: center;
+    color: #C59D5F;
+    text-transform: uppercase;
+    padding-top: 80px;
+}
+.title img{
+    margin-right: 90px;
+}
+.sub-title{
+    text-align: center;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+.where{
+    font-size: 30px;
+    color: #ff9900;
+    padding-bottom: 20px;
+}
+.place{
+    padding-bottom: 10px;
+    text-transform: lowercase;
+}
+.time{
+    padding-bottom: 10px;
+}
+.phone{
+    padding-bottom: 70px;
+}
+#Delivery{
+    padding-top: 70px;
+    background-color: rgb(250, 239, 220);
+}
+.heading{
+    color: #C59D5F;
+}
+.sub-head{
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sub-head img{
+    padding-top: 20px;
+    width: 30%;
+    height: 10vh;
+}
+.city {
+  display: flex;
+  gap: 80px;
+  margin-top: 40px;
+  padding-bottom: 70px;
+}
+.city-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.sym,.sym1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.sym svg,.sym1 svg {
+  color: orange;
+}
+#foot{
+    background-color: rgb(20, 19, 19);
+    color: white;
+    display: flex;
+}
+.part1 img{
+    width: 80%;
+    height: 10vh;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.part1 p{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.part2{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.part3{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.part4{
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.name{
+    font-size: 30px;
+    text-decoration: underline;
+    padding-bottom: 20px;
+}
+ul li{
+    padding-bottom: 30px;
+    text-decoration: none;
+    list-style: none;
+}
+.social{
+  display: flex;
+  gap: 15px;
+}
+.icon {
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.icon svg {
+  color: orange;
+  font-size: 18px;
+}
+.icon:hover {
+  background: orange;
+}
+.icon:hover svg {
+  color: #fff;
+}
+#last{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    padding: 20px;
+}
+.line{
+    margin-left: 50px;
+}
+.lin{
+    margin-left: 600px;
+}
+.lin2{
+    margin-left: 50px;
+}
