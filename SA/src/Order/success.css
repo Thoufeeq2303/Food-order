@@ -5,7 +5,6 @@
   justify-content: center;
   background: linear-gradient(135deg,#fff7ed,#ffe0b2);
 }
-
 .success-card {
   background: white;
   padding: 50px 60px;
@@ -14,7 +13,6 @@
   box-shadow: 0 25px 70px rgba(0,0,0,.15);
   animation: pop .4s ease;
 }
-
 .checkmark {
   width: 90px;
   height: 90px;
@@ -27,21 +25,16 @@
   margin: 0 auto 20px;
   animation: bounce .6s ease;
 }
-
 .big-timer {
   font-size: 42px;
   font-weight: bold;
   color: #ff6a00;
   margin: 15px 0;
 }
-
-/* animations */
-
 @keyframes pop {
   from { transform: scale(.7); opacity: 0 }
   to { transform: scale(1); opacity: 1 }
 }
-
 @keyframes bounce {
   0% { transform: scale(.5) }
   60% { transform: scale(1.2) }

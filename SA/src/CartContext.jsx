@@ -5,7 +5,6 @@ const CartContext = createContext();
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState({});
 
-  // ✅ increase qty
   const increase = (item) => {
     setCart(prev => ({
       ...prev,
@@ -16,14 +15,12 @@ export const CartProvider = ({ children }) => {
     }));
   };
 
-  // ✅ decrease qty (IMMUTABLE — no mutation)
   const decrease = (id) => {
     setCart(prev => {
       if (!prev[id]) return prev;
 
       const newQty = prev[id].qty - 1;
 
-      // remove item if qty becomes 0
       if (newQty <= 0) {
         const { [id]: removed, ...rest } = prev;
         return rest;
@@ -39,7 +36,6 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  // ✅ total price
   const total = Object.values(cart)
     .reduce((sum, item) => sum + item.price * item.qty, 0);
 
@@ -50,5 +46,4 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-// ✅ custom hook
 export const useCart = () => useContext(CartContext);

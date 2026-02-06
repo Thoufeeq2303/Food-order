@@ -10,7 +10,7 @@ const Cart = () => {
 
   const handleBuy = () => {
     if (items.length === 0) return;
-    navigate("/tracking");   // ✅ go to new page
+    navigate("/tracking");  
   };
 
   return (
@@ -18,25 +18,21 @@ const Cart = () => {
 
       <h2>YOUR ORDER</h2>
 
-      {/* empty message */}
       {items.length === 0 && (
         <p className="empty-msg">
           Your cart is empty
         </p>
       )}
 
-      {/* cart rows */}
       {items.map(item => (
         <div key={item._id} className="cart-row">
 
-          {/* image */}
           <img
             src={item.image}
             alt={item.name}
             className="cart-img"
           />
 
-          {/* info */}
           <div className="cart-info">
 
             <h4 className="item-name">
@@ -71,7 +67,6 @@ const Cart = () => {
         </div>
       ))}
 
-      {/* total + buy button */}
       {items.length > 0 && (
         <>
           <h3 className="cart-total">

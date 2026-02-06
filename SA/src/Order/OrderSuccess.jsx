@@ -13,7 +13,7 @@ const OrderSuccess = ({ onClose }) => {
         }
         return v - 1;
       });
-    }, 60000); // 1 min
+    }, 60000); 
 
     return () => clearInterval(t);
   }, []);

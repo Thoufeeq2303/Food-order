@@ -8,7 +8,7 @@ import { useCart } from "../CartContext.jsx";
 
 const Order = () => {
 
-  const { cart, increase, decrease } = useCart();   // ✅ context cart
+  const { cart, increase, decrease } = useCart(); 
   const [search, setSearch] = useState("");
   const [food, setFood] = useState([]);
 
@@ -47,7 +47,7 @@ const Order = () => {
                 {itemCount === 0 ? (
                   <button
                     className='add-btn'
-                    onClick={() => increase(item)}   // ✅ send full item
+                    onClick={() => increase(item)} 
                   >
                     ADD
                   </button>
@@ -68,9 +68,6 @@ const Order = () => {
 
   return (
     <div>
-
-      {/* ---------- NAV ---------- */}
-
       <div className='navi'>
         {[
           ["shaw","Shawarma"],
@@ -99,9 +96,6 @@ const Order = () => {
           <FaCartShopping />
         </Link>
       </div>
-
-      {/* ---------- SECTIONS ---------- */}
-
       <div className='order'>
 
         {["shaw","kebab","alf","grill","chiman","muman","plat","kuna","milk","dess"]

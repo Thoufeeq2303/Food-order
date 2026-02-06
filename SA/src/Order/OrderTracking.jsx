@@ -3,7 +3,6 @@ import "./success.css";
 
 const OrderTracking = () => {
 
-  // 10 minutes = 600 seconds
   const [seconds, setSeconds] = useState(600);
 
   useEffect(() => {
