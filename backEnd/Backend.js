@@ -11,10 +11,8 @@ app.get("/", (req,res)=>{
 })
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = "mongodb+srv://mohammedthoufeequf_db_user:Thoufeeq2303@cluster2.marapbn.mongodb.net/?appName=Cluster2";
-
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
-const client = new MongoClient(uri, {
+const uri =
+"mongodb+srv://mohammedthoufeequf_db_user:Thoufeeq123@cluster5.bm3qoa6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster5";const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
@@ -47,31 +45,6 @@ app.get("/getFoodByCategory", async(req,res)=>{
       res.send(result)
     })
 
-    // app.get("/getFood/:id", async(req,res)=>{
-    //   const id = req.params.id
-    //   const filter = {_id : new ObjectId(id)}
-    //   const result = await orderCollection.findOne(filter)
-    //   res.send(result)
-    // })
-
-    // app.patch("/updateFood/:id", async(req,res)=>{
-    //   const id = req.params.id
-    //   const update = req.body
-    //   const filter = {_id: new ObjectId(id)}
-    //   const object = {$set:{...update}}
-
-    //   const option = {upsert: true }
-    //   const result = await orderCollection.updateMany(filter,  object)
-    //   res.send(result)
-    // })
-
-    // app.delete("/deleteFood/:id", async(req,res)=>{
-    //   const id = req.params.id
-    //   const filter = {_id : new ObjectId(id)}
-    //   const result = await orderCollection.deleteOne(filter)
-    //   res.send(result)
-    // })    
-    // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
